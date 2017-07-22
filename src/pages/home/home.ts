@@ -64,8 +64,11 @@ export class HomePage {
         this.updateCurrentChapter();
       });
 
-      this.book.renderTo("area");
     });
+  }
+
+  ionViewDidLoad(){
+      this.book.renderTo("area");
   }
 
   updateTotalPages(){
